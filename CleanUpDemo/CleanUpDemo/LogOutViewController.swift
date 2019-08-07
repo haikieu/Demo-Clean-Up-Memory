@@ -35,7 +35,7 @@ class LogOutViewController: UIViewController {
     counter.startTracking()
     
     //Setup UI
-    if mode == 1 { logOutBtn.setTitle("Log Out With DumbTruck", for: .normal) }
+    if mode == 1 { logOutBtn.setTitle("Log Out With DumpTruck", for: .normal) }
     navigationItem.hidesBackButton = true
   }
   
@@ -48,7 +48,7 @@ class LogOutViewController: UIViewController {
     
     switch mode {
     case 0: logOut()
-    case 1: logOutWithDumbTruck()
+    case 1: logOutWithDumpTruck()
     default: fatalError()
     }
     
@@ -62,10 +62,10 @@ class LogOutViewController: UIViewController {
     conversations = []
   }
   
-  func logOutWithDumbTruck() {
+  func logOutWithDumpTruck() {
     
     //Ask DumpTruck to empty the conversations
-    DumbTruck.empty(conversations)
+    DumpTruck.empty(conversations)
     
     //Remove tie to the removed conversations
     conversations = []

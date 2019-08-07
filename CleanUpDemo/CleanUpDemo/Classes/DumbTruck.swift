@@ -1,5 +1,5 @@
 //
-//  DumbTruck.swift
+//  DumpTruck.swift
 //  CleanUpDemo
 //
 //  Created by KIEU, HAI on 8/6/19.
@@ -8,7 +8,9 @@
 
 import Foundation
 
-final class DumbTruck {
+///What the DumpTruck does is clean up resources in background thread
+final class DumpTruck {
+  
   static func empty(_ object: Any?) {
     
     var capture = [object]

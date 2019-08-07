@@ -48,7 +48,7 @@ extension MenuViewController: UITableViewDataSource {
     
     switch indexPath.row {
     case 0: cell.textLabel?.text = "Log Out"
-    case 1: cell.textLabel?.text = "Log Out With DumbTruck"
+    case 1: cell.textLabel?.text = "Log Out With DumpTruck"
     default: fatalError()
     }
     
